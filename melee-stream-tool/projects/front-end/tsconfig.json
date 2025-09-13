@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    // Add references to other local packages this package depends on
+    { "path": "../base" } 
+  ]
+}

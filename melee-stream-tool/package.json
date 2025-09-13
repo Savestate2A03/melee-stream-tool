@@ -1,0 +1,19 @@
+{
+  "name": "melee-stream-tool",
+  "version": "0.0.1-alpha",
+  "description": "An all-in-one stream tool for Super Smash Brothers Melee",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build --verbose tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Public Domain",
+  "type": "commonjs",
+  "workspaces": [
+    "projects/front-end",
+    "projects/back-end",
+    "projects/base"
+  ]
+}
