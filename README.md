@@ -105,7 +105,8 @@ WIP
 
 I have placed a fun variation of the Slippi Nintendont icon for the HBC app featuring myself howling at the Slippi Logo as a moon if you would like to use it.
 
-> File: [`./extras/rei-wolf-slippi-nintendont-icon/icon.png`](extras/rei-wolf-slippi-nintendont-icon/icon.png) \
+> File: [`./extras/rei-wolf-slippi-nintendont-icon/icon.png`](extras/rei-wolf-slippi-nintendont-icon/icon.png)
+> 
 > ![](extras/rei-wolf-slippi-nintendont-icon/icon.png)
 > 
 
