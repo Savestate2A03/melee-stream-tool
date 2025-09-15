@@ -14,9 +14,9 @@ The goal for this is to be platform-agnostic. However, I recommend utilizing VSC
 There are some prerequisite requirements before running:
 - **OBS Studio 28+** (OBS Websocket 5.0+)
 - A properly set up **Wii**
-  - Latest version of [**Slippi Nintendont**]
+  - Latest version of [**Slippi Nintendont**](https://slippi.gg/downloads)
   - Has a [nickname set](extras/README_nickname.png) with the `slippi-wiiconf` app
-- Latest **Slippi Launcher**
+- Latest [**Slippi Launcher**](https://slippi.gg/downloads)
   - Able to utilize Slippi's **Console Mirror** via LAN (no Wi-fi)
     - **Enable Real-time Mode** is checked and works without issue
     - **Enable Console Relay** is checked
