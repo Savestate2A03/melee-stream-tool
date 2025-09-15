@@ -1,5 +1,11 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
+  "files": [],
+  "references": [
+    { "path": "./projects/base" },
+    { "path": "./projects/back-end" },
+    { "path": "./projects/front-end" }
+  ],
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
@@ -7,9 +13,10 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "esnext",
     "moduleResolution": "bundler",
     // For nodejs:
+    "target": "esnext",
     "lib": ["esnext"],
     "types": ["node"],
     // and npm install -D @types/node
@@ -18,6 +25,7 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "incremental": true,
 
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -27,6 +35,7 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
 
     // Style Options
     // "noImplicitReturns": true,
@@ -48,7 +57,10 @@
     "paths": {
       "@melee-stream-tool/base/*": ["projects/base/src/*"],
       "@melee-stream-tool/back-end/*": ["projects/back-end/src/*"],
-      "@melee-stream-tool/front-end/*": ["projects/front-end/src/*"]
+      "@melee-stream-tool/front-end/*": ["projects/front-end/src/*"],
+      "@melee-stream-tool/base": ["projects/base/src"],
+      "@melee-stream-tool/back-end": ["projects/back-end/src"],
+      "@melee-stream-tool/front-end": ["projects/front-end/src"]
     }
   }
 }

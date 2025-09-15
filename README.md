@@ -8,6 +8,7 @@ The goal for this is to be platform-agnostic. However, I recommend utilizing VSC
 - **Angular Language Service** *(Angular.ng-template)*
 - **Markdown Preview Mermaid Support** *(bierner.markdown-mermaid)*
 - **Code Spell Checker** *(streetsidesoftware.code-spell-checker)*
+- **GitLens — Git supercharged** *(eamodio.gitlens)*
 
 ## Requirements
 There are some prerequisite requirements before running:
