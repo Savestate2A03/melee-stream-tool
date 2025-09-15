@@ -2,15 +2,16 @@
   "name": "melee-stream-tool",
   "version": "0.0.1-alpha",
   "description": "An all-in-one stream tool for Super Smash Brothers Melee",
-  "main": "index.js",
   "scripts": {
-    "build": "tsc --build --verbose tsconfig.build.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --build --verbose tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back-end": "nodemon --config ./projects/back-end/nodemon.json",
+    "front-end": "nodemon --config ./projects/front-end/nodemon.json"
   },
   "keywords": [],
   "author": "",
   "license": "Public Domain",
-  "type": "commonjs",
+  "type": "module",
   "workspaces": [
     "projects/front-end",
     "projects/back-end",
@@ -18,7 +19,8 @@
   ],
   "devDependencies": {
     "@types/node": "24.4.0",
-    "ts-node": "10.9.2",
+    "nodemon": "3.1.10",
+    "tsx": "4.20.5",
     "typescript": "5.9.2"
   }
 }

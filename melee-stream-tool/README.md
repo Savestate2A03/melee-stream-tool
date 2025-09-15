@@ -2,5 +2,5 @@
 Adding dependencies to workspaces (i.e. base, front-end, and back-end)
 
 ```bash
-npm install @melee-stream-tool/base -w @whatever/goes-here
+npm install @whatever/goes-here -w @melee-stream-tool/base
 ```
