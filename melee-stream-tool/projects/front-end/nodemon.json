@@ -1,0 +1,7 @@
+{
+    "watch": ["projects/front-end/src", "projects/base/src"],
+    "execMap": { "ts": "ts-node" },
+    "ext": "ts,json",
+    "ignore": ["node_modules"],
+    "exec": "tsx projects/front-end/src/index.ts"
+}
