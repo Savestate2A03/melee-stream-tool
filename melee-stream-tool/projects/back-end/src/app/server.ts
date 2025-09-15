@@ -1,18 +1,21 @@
-import express, { Request, Response, Express } from 'express';
+import express, { Express } from 'express';
+import { Routes } from './routes';
 
 export class Server {
     private static server: Server;
     private port: number;
     private express: Express;
 
-    private constructor(port?: number) {
+    private constructor(routes: Routes, port?: number) {
         this.port = port ?? 6969;
         this.express = express();
+        this.express.use(express.json());
+        this.express.use('/heartbeat', routes.getRouter());
     }
 
-    public static getServer(port?: number): Server {
+    public static getServer(routes: Routes, port?: number): Server {
         if (!Server.server) {
-            Server.server = new Server(port);
+            Server.server = new Server(routes, port);
         }
         return Server.server;
     }

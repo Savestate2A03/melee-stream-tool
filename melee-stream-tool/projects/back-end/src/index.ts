@@ -9,9 +9,8 @@ function test(): void {
 
 function init(): void {
     test();
-    const server = Server.getServer();
-    const routes = new Routes();
-    routes.routes();
+    const routes: Routes = new Routes();
+    const server: Server = Server.getServer(routes);
     server.start();
 }
 

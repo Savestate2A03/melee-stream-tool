@@ -1,14 +1,28 @@
 import { Server } from '@melee-stream-tool/back-end/app/server';
-import { Express, Request, Response } from 'express';
+import { Router, Request, Response } from 'express';
 
 export class Routes {
-    private express: Express;    
+    private router: Router;
     public constructor() {
-        this.express = Server.getServer().getExpress();
+        this.router = Router();
+        this.buildRoutes();
     }
-    public routes(): void {
-        this.express.get('/', (req: Request, res: Response) => {
-            res.send(`awruf!! ${req.host} :3`);
+    private buildRoutes(): void {
+        this.router.get('/', (req: Request, res: Response) => {
+            const message = {
+                msg: `awruf!! ${req.host} :3`,
+                time: Date.now().toString()
+            };
+            res.status(201).json(message);
         });
+        this.router.get('/:id', (req: Request, res: Response) => {
+            res.status(201).json({
+                msg: 'your id is!!!',
+                id: req.params.id
+            });
+        });
+    }
+    public getRouter(): Router {
+        return this.router;
     }
 }
