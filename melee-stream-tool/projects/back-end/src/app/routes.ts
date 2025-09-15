@@ -1,4 +1,3 @@
-import { Server } from '@melee-stream-tool/back-end/app/server';
 import { Router, Request, Response } from 'express';
 
 export class Routes {
